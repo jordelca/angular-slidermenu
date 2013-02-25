@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cloudspokes Slider</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="icon" href="/img/favicon.ico" />
+  <script src="lib/jquery/jquery-1.9.1.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body  ng-app="slider">
+ 
+
+  <header>
+
+      <div>
+          <img click class="start icon" src="/img/icons/menu22.png">
+      </div>
+
+      <section class="menu">
+        <a href="#nowhere">
+          <div class="profile">    
+              <img class="icon" src="/img/passport.jpg"/>
+              <span>Vanellope von Schweetz</span>
+          </div>
+        </a>
+
+        <div ng-controller="natureCtrl" class="category">
+          <div ng-model="category" ng-repeat="item in nature.products">
+
+                <img class="icon" ng-src="{{item.icon}}"/>
+                <span>{{item.name}}</span>
+                 <ul  class="subcategory">
+                  
+                    <div ng-repeat="product in item.elements">
+                    
+                    <li mouseenter mouseleave ng-class="{'active':getClass(product.link)}">
+                      <a clickoption href="#{{product.link}}">{{product.name}}</a>
+                    </li>
+                    
+                    </div>
+                  
+                </ul>
+              
+            
+
+          </div>
+        </div>
+
+        
+      </section>
+  </header>
+
+  <section class="content">
+      <ng:view></ng:view>
+  </section>
+</body>
+</html>

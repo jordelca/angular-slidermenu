@@ -1,0 +1,102 @@
+/* app css stylesheet */
+body{
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+li{
+	 list-style:none;
+}
+
+ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.both{
+	clear:both;
+}
+img{
+	vertical-align: middle;
+}
+a{
+	color:  #0D5EAA;
+	text-decoration: none;
+}
+header {
+position: fixed;
+top: 0;
+left:0;
+width: 100%;
+height: 40px;
+
+}
+
+.icon{
+
+	padding:7px;
+}
+
+section.menu{
+	position: absolute;
+	top: 40px;
+	height: auto;
+	width: auto;
+	padding: 15px 0 15px 0;
+	margin-left: 0px;
+}
+section.menu,header{
+	border-style: solid;
+	border-color: #B9CDE5;
+	border-width: 1px;
+	background-color: #DCE6F2;	
+}
+
+section.content{
+	margin-top:50px;
+}
+
+div.profile img{
+	width:50px;
+	height:50px;
+
+}
+
+div.profile{
+	padding-right:10px;
+	font-weight: bold;
+}
+
+
+.category .icon{
+	width:25px;
+	height:25px;
+}
+
+.subcategory li{
+	-moz-border-radius: 5px 0 0 5px;
+	border-radius:  5px 0 0 5px;
+	padding:8px 10px 8px 10px;
+}
+
+
+.subcategory li.hover{
+	background-color:#B9CDE5;
+}
+
+.subcategory li.active{
+	background-color:#95B3D7;
+	font-weight: bold;
+
+}
+
+
+
+.subcategory a li.active{
+	color:#404040 ;
+}
+
