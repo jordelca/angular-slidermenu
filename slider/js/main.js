@@ -80,8 +80,6 @@ app.directive("clickoption",function(){
 		element.bind("click",function(){
 			$("li.active").removeClass("active");
 			element.parent().addClass("active");
-			scope.url=element.parent().attr("link");
-			$("section.content").attr("src",scope.url);
 			$("section.menu").animate({marginLeft:($("section.menu").width()*-1)-10});
 		})
 
